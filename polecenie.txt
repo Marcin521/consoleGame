@@ -1,0 +1,27 @@
+Entity:
+- ATK
+- DEF
+- HP
+- LVL
+zadajObra¿enia()
+otrzymajObra¿enia(obra¿enia)
+
+Gracz : Entity
+otrzymajObra¿enia(obra¿enia):
+  Iloœæ obra¿eñ równa jest ATK * ( DEF / (DEF + 10) ) * ( 1 - ( LEVEL_DIFF / LEVEL_DIFF + 5 ) )
+  Gdzie DEF - obrona broni¹cego, ATK - wartoœæ obra¿eñ atakuj¹cego, LEVEL_DIFF - ró¿nica levelu
+  broni¹cego oraz atakuj¹cego
+zadajObra¿enia():
+  Iloœæ obra¿eñ równa jest ATK * ( 1 + ( LVL / 10 ) )
+
+Potwór : Entity
+otrzymajObra¿enia(obra¿enia):
+  Iloœæ obra¿eñ równa jest ATK * ( DEF / (DEF + 10) )
+  Gdzie DEF - obrona broni¹cego, ATK - wartoœæ obra¿eñ atakuj¹cego
+zadajObra¿enia():
+  Iloœæ obra¿eñ równa jest ATK
+
+
+Napisz program, który przeprowadzi pojedynek dowolnych dwóch "Entity" (czyli mo¿e to
+byæ zarówno 2 graczy, jak i 2 Potwory, jak i Gracz vs Potwór), których statystki oraz typ
+(Gracz czy Potwór) przyjmiesz od u¿ytkownika.
