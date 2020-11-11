@@ -1,0 +1,3 @@
+"D:\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\simulation.dir/objects.a
+C:\PROGRA~2\mingw-w64\i686-7.1.0-posix-dwarf-rt_v5-rev2\mingw32\bin\ar.exe cr CMakeFiles\simulation.dir/objects.a @CMakeFiles\simulation.dir\objects1.rsp
+C:\PROGRA~2\mingw-w64\i686-7.1.0-posix-dwarf-rt_v5-rev2\mingw32\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\simulation.dir/objects.a -Wl,--no-whole-archive  -o simulation.exe -Wl,--out-implib,libsimulation.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\simulation.dir\linklibs.rsp

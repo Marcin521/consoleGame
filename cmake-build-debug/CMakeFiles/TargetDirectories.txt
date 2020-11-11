@@ -1,0 +1,3 @@
+C:/Programowanie/simulation/cmake-build-debug/CMakeFiles/simulation.dir
+C:/Programowanie/simulation/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Programowanie/simulation/cmake-build-debug/CMakeFiles/rebuild_cache.dir
