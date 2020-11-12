@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Programowanie/simulation/Entity.cpp">
+			<Option target="simulation"/>
+		</Unit>
+		<Unit filename="C:/Programowanie/simulation/Entity.h">
+			<Option target="simulation"/>
+		</Unit>
 		<Unit filename="C:/Programowanie/simulation/main.cpp">
 			<Option target="simulation"/>
 		</Unit>

@@ -3,4 +3,4 @@ project(simulation)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(simulation main.cpp)
+add_executable(simulation main.cpp Entity.cpp Entity.h)

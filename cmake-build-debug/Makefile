@@ -142,6 +142,33 @@ simulation/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulation.dir\build.make CMakeFiles/simulation.dir/build
 .PHONY : simulation/fast
 
+Entity.obj: Entity.cpp.obj
+
+.PHONY : Entity.obj
+
+# target to build an object file
+Entity.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulation.dir\build.make CMakeFiles/simulation.dir/Entity.cpp.obj
+.PHONY : Entity.cpp.obj
+
+Entity.i: Entity.cpp.i
+
+.PHONY : Entity.i
+
+# target to preprocess a source file
+Entity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulation.dir\build.make CMakeFiles/simulation.dir/Entity.cpp.i
+.PHONY : Entity.cpp.i
+
+Entity.s: Entity.cpp.s
+
+.PHONY : Entity.s
+
+# target to generate assembly for a file
+Entity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulation.dir\build.make CMakeFiles/simulation.dir/Entity.cpp.s
+.PHONY : Entity.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -178,6 +205,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... simulation
+	@echo ... Entity.obj
+	@echo ... Entity.i
+	@echo ... Entity.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

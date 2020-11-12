@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/simulation.dir/Entity.cpp.obj"
   "CMakeFiles/simulation.dir/main.cpp.obj"
   "libsimulation.dll.a"
   "simulation.exe"

@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Programowanie/simulation/Entity.cpp" "C:/Programowanie/simulation/cmake-build-debug/CMakeFiles/simulation.dir/Entity.cpp.obj"
   "C:/Programowanie/simulation/main.cpp" "C:/Programowanie/simulation/cmake-build-debug/CMakeFiles/simulation.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
