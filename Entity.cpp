@@ -3,11 +3,12 @@
 //
 
 #include "Entity.h"
-Entity::Entity(string n, int d, int a, int l)
+Entity::Entity(string n, int d, int a, int h, int l)
 {
     NAME=n;
     DEF=d;
     ATK=a;
+    HP=h;
     LEVEL_DIFF=l;
 }
 
@@ -26,7 +27,12 @@ int Entity::getATK()
     return ATK;
 }
 
-int Entity::getLeVEL_DiFF()
+int Entity::getHP()
+{
+    return HP;
+}
+
+int Entity::getLEVEL_DIFF()
 {
     return LEVEL_DIFF;
 }

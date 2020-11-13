@@ -13,10 +13,12 @@ class Entity {
 
     //nazwa
     string NAME;
-    // obrona broniącego
+    //obrona broniącego
     int DEF;
-    // wartość obrażeń atakującego
+    //wartość obrażeń atakującego
     int ATK;
+    //Hp
+    int HP;
     //różnica levelu
     int LEVEL_DIFF;
 
@@ -25,10 +27,11 @@ public:
     string getNAME();
     int getDEF();
     int getATK();
-    int getLeVEL_DiFF();
+    int getHP();
+    int getLEVEL_DIFF();
 
     //twoże konstruktor
-    Entity(string, int, int, int);
+    Entity(string, int, int, int, int);
     ~Entity();
 
 };
