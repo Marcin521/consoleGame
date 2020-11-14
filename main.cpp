@@ -4,11 +4,19 @@
 using namespace std;
 
 
-/*float otrzymajObrażenia(float *arr)
+float takeDamage(string a, int b, int c, int d, int e)
 {
-    //(ATK * ( DEF / (DEF + 10) ) * ( 1 - ( LEVEL_DIFF / LEVEL_DIFF + 5 ) )
+    int ATK, DEF, LEVEL_DIFF;
+    float result;
+
+    ATK = b;
+    DEF = d;
+    LEVEL_DIFF = e;
+
+    result = (ATK * ( DEF / (DEF + 10) )) * ( 1 - ( LEVEL_DIFF / LEVEL_DIFF + 5 ) );
+    cout << result << endl;
 }
-*/
+
 
 int main() {
 
@@ -25,16 +33,17 @@ int main() {
 
     for(; n>0; n--)
     {
+        cout << "Name your entity" << endl;
         string a;
+
         int b, c, d, e;
 
         cin >> a >> b >> c >> d >> e;
 
         arr.push_back(Entity (a, b, c, d, e));
         arrN[s-1] = c;
+
     }
-
-
 
     return 0;
 }
