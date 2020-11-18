@@ -9,7 +9,7 @@ Entity::Entity(string n, int d, int a, int h, int l)
     DEF=d;
     ATK=a;
     HP=h;
-    LEVEL_DIFF=l;
+    LVL=l;
 }
 
 string Entity::getNAME()
@@ -32,9 +32,9 @@ int Entity::getHP()
     return HP;
 }
 
-int Entity::getLEVEL_DIFF()
+int Entity::getLVL()
 {
-    return LEVEL_DIFF;
+    return LVL;
 }
 
 Entity::~Entity() {}

@@ -20,7 +20,7 @@ class Entity {
     //Hp
     int HP;
     //różnica levelu
-    int LEVEL_DIFF;
+    int LVL;
 
 public:
 
@@ -28,12 +28,11 @@ public:
     int getDEF();
     int getATK();
     int getHP();
-    int getLEVEL_DIFF();
+    int getLVL();
 
     //twoże konstruktor
     Entity(string, int, int, int, int);
     ~Entity();
-
 };
 
 

@@ -4,7 +4,7 @@
 using namespace std;
 
 
-float takeDamage(string a, int b, int c, int d, int e)
+float takeDamage(int b, int c, int d, int e)
 {
     int ATK, DEF, LEVEL_DIFF;
     float result;
@@ -13,8 +13,19 @@ float takeDamage(string a, int b, int c, int d, int e)
     DEF = d;
     LEVEL_DIFF = e;
 
-    result = (ATK * ( DEF / (DEF + 10) )) * ( 1 - ( LEVEL_DIFF / LEVEL_DIFF + 5 ) );
-    cout << result << endl;
+    result = (ATK * ( float(DEF) / (DEF + 10) )) * ( 1 - ( float(LEVEL_DIFF) / (LEVEL_DIFF + 5 ) ));
+    return result;
+}
+
+float dealDamage(int b, int e)
+{
+    ATK = b;
+    DEF = d;
+    LEVEL_DIFF = e;
+
+    ATK * ( DEF / (DEF + 10) )
+
+    return
 }
 
 
@@ -25,11 +36,9 @@ int main() {
     cout << "podaj liczbe graczy" << endl;
     cin >> n;
 
-    s=n*4;//----------------
-
-    float arrN[s];
-
     vector<Entity> arr;
+
+    cout << takeDamage("A", 4, 5, 6, 7) << endl;
 
     for(; n>0; n--)
     {
@@ -41,7 +50,6 @@ int main() {
         cin >> a >> b >> c >> d >> e;
 
         arr.push_back(Entity (a, b, c, d, e));
-        arrN[s-1] = c;
 
     }
 
