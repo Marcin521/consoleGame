@@ -5,16 +5,16 @@
 #include "Entity.h"
 Entity::Entity(string n, int d, int a, int h, int l)
 {
-    NAME=n;
+    name=n;
     def=d;
-    ATK=a;
-    HP=h;
+    atk=a;
+    hp=h;
     lvl=l;
 }
 
-string Entity::getNAME()
+string Entity::getname()
 {
-    return NAME;
+    return name;
 }
 
 int Entity::getdef()
@@ -22,14 +22,14 @@ int Entity::getdef()
     return def;
 }
 
-int Entity::getATK()
+int Entity::getatk()
 {
-    return ATK;
+    return atk;
 }
 
-int Entity::getHP()
+int Entity::gethp()
 {
-    return HP;
+    return hp;
 }
 
 int Entity::getlvl()

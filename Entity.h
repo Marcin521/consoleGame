@@ -11,24 +11,28 @@ using namespace std;
 
 class Entity {
 
+protected:
     //nazwa
-    string NAME;
+    string name;
     //obrona broniącego
     int def;
     //wartość obrażeń atakującego
-    int ATK;
-    //Hp
-    int HP;
+    int atk;
+    //hp
+    int hp;
     //różnica levelu
     int lvl;
 
 public:
 
-    string getNAME();
+    string getname();
     int getdef();
-    int getATK();
-    int getHP();
+    int getatk();
+    int gethp();
     int getlvl();
+
+    virtual int takeDamage(int, int, int);
+    virtual int dealDamage();
 
     //twoże konstruktor
     Entity(string, int, int, int, int);

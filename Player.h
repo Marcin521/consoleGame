@@ -6,7 +6,12 @@
 #define SIMULATION_PLAYER_H
 
 
-class Player {
+#include "Entity.h"
+
+class Player : public Entity {
+
+    int takeDamage(int, int);
+    int dealDamage();
 
 };
 
