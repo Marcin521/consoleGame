@@ -6,10 +6,10 @@
 Entity::Entity(string n, int d, int a, int h, int l)
 {
     NAME=n;
-    DEF=d;
+    def=d;
     ATK=a;
     HP=h;
-    LVL=l;
+    lvl=l;
 }
 
 string Entity::getNAME()
@@ -17,9 +17,9 @@ string Entity::getNAME()
     return NAME;
 }
 
-int Entity::getDEF()
+int Entity::getdef()
 {
-    return DEF;
+    return def;
 }
 
 int Entity::getATK()
@@ -32,9 +32,9 @@ int Entity::getHP()
     return HP;
 }
 
-int Entity::getLVL()
+int Entity::getlvl()
 {
-    return LVL;
+    return lvl;
 }
 
 Entity::~Entity() {}

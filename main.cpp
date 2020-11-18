@@ -4,28 +4,14 @@
 using namespace std;
 
 
-float takeDamage(int b, int c, int d, int e)
+float takeDamage(int atk, int def, int LEVEL_DIFF)
 {
-    int ATK, DEF, LEVEL_DIFF;
-    float result;
-
-    ATK = b;
-    DEF = d;
-    LEVEL_DIFF = e;
-
-    result = (ATK * ( float(DEF) / (DEF + 10) )) * ( 1 - ( float(LEVEL_DIFF) / (LEVEL_DIFF + 5 ) ));
-    return result;
+    return (atk * ( float(def) / (def + 10) )) * ( 1 - ( float(LEVEL_DIFF) / (LEVEL_DIFF + 5 ) ));
 }
 
-float dealDamage(int b, int e)
+float dealDamage(int atk, int lvl)
 {
-    ATK = b;
-    DEF = d;
-    LEVEL_DIFF = e;
-
-    ATK * ( DEF / (DEF + 10) )
-
-    return
+    return atk * ( 1 + ( lvl / 10 ) );
 }
 
 
@@ -37,8 +23,6 @@ int main() {
     cin >> n;
 
     vector<Entity> arr;
-
-    cout << takeDamage("A", 4, 5, 6, 7) << endl;
 
     for(; n>0; n--)
     {
