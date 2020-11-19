@@ -4,7 +4,7 @@
 
 #include "Player.h"
 #include "Entity.h"
-
+//#include <math.h>
 
 
     int Player::takeDamage(int atk, int lvl, int hp)
@@ -14,7 +14,9 @@
         score = (atk * ( float(def) / (def + 10) )) * ( 1 - ( float(this->lvl-lvl) / ((this->lvl-lvl) + 5 ) ));
         // this-> odnieisenie się do obiektu
 
-        return score-hp;
+        //score = (int ceil) ( score - hp) ;
+
+        return score;
         //od  hp - wynik
         // i zwróć wynik
         //wynik zaokrąflij w górę funkcją

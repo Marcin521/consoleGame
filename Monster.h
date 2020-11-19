@@ -6,7 +6,12 @@
 #define SIMULATION_MONSTER_H
 
 
-class Monster {
+#include "Entity.h"
+
+class Monster : public Entity {
+
+    int takeDamage(int, int, int);
+    int dealDamage();
 
 };
 

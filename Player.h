@@ -10,7 +10,7 @@
 
 class Player : public Entity {
 
-    int takeDamage(int, int);
+    int takeDamage(int, int, int);
     int dealDamage();
 
 };
