@@ -37,4 +37,12 @@ int Entity::getlvl()
     return lvl;
 }
 
+int Entity :: takeDamage(int, int, int){
+    return 1;
+};
+
+int Entity :: dealDamage(){
+    return 0;
+};
+
 Entity::~Entity() {}
